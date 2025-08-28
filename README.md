@@ -6,24 +6,59 @@ Additionally try these out and see what errors you get. Document your errors her
 Starting with the Hello World program, try out each of the following errors. After you make each change, compile the program, read the error message (if there is one), and then fix the error.
 
 Remove one of the opening curly braces.
+    Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+
+        at HelloWorld.main(HelloWorld.java:2)
+
 
 Remove one of the closing curly braces.
+    Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+        Syntax error, insert "}" to complete ClassBody
+
+        at HelloWorld.main(HelloWorld.java:4)
+
 
 Instead of main, write mian.
+    Error: Main method not found in class HelloWorld, please define the main method as:
+   public static void main(String[] args)
+    or a JavaFX application class must extend javafx.application.Application
 
 Remove the word static.
+    Error: Main method is not static in class HelloWorld, please define the main method as:
+    public static void main(String[] args)
 
 Remove the word public.
+    Error: Main method not found in class HelloWorld, please define the main method as:
+    public static void main(String[] args)
+    or a JavaFX application class must extend javafx.application.Application
 
 Remove the word System.
+    Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+        out cannot be resolved
+
+        at HelloWorld.main(HelloWorld.java:3)v
 
 Replace println with Println.
+    Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+        The method Println(String) is undefined for the type PrintStream
+
+        at HelloWorld.main(HelloWorld.java:3)
 
 Replace println with print.
+         Works fine but it does not generate a new line.
+
 
 Delete one parenthesis.
+    Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+        Syntax error on token "println", ( expected after this token
+
+        at HelloWorld.main(HelloWorld.java:3)
 
 Add an extra parenthesis.
+    Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+        Syntax error, insert ")" to complete Expression
+
+        at HelloWorld.main(HelloWorld.java:3)
 
 
 Fix the code so it works and commit your changes.
